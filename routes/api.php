@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('/order','OrderController');
+
+Route::get('/symbols','SymbolController@index');
+
+Route::post('/symbol','SymbolController@store');
+
+Route::get('/symbol/{symbol}','SymbolController@show');

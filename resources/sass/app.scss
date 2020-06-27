@@ -6,3 +6,9 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import 'navbar';
+
+body{
+    background-color: rgb(66,66,66);
+}
